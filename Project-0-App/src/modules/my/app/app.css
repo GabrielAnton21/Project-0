@@ -36,3 +36,12 @@ img {
 .greeting {
     height: 75px;
 }
+
+.span{
+    width:100%;
+}
+
+.pageLayout {
+    padding:2em;
+}
+

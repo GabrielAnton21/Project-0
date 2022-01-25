@@ -14,6 +14,10 @@ module.exports = {
           
         
             ],
-        
+            sourceDir: './src/',
+            moduleDir: './src/modules',
+            devServer: {
+                proxy: { '/': 'http://localhost:3002' }
+            }
         
 };
