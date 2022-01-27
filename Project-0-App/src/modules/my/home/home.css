@@ -1,0 +1,14 @@
+
+
+.pageLayout {
+    padding:2em;
+}
+
+.outer-card {
+    padding:2em;
+}
+
+.inner-card{
+    border: solid 1px black;
+    overflow: hidden;
+}

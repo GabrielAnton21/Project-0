@@ -1,0 +1,199 @@
+<template>
+
+ <!-- home page render -->
+
+ <div class="pageLayout">
+
+    <div class="slds-text-heading_medium slds-align_absolute-center" title="Subheading">Select from hundreds of Sci-fi novels, short stories, and more!</div>
+    <br>
+
+
+
+    <div class="slds-grid slds-gutters">
+
+      <!-- left gap -->
+        <div class="slds-col slds-size_1-of-4">
+        </div>
+       <!-- left gap -->
+
+
+      <div class="slds-col slds-size_2-of-4">
+        <div class="slds-grid slds-gutters">
+        
+        <!-- column 1 -->
+
+        <div class="slds-col slds-size_2-of-3 pageLayout"> 
+
+          <template if:true={isHardSFGenreClicked}>
+  
+            <my-hardsfgenre></my-hardsfgenre>
+
+          </template>
+
+    <template if:false={isHardSFGenreClicked}>
+
+    <div class="slds-card outer-card">
+
+
+      </div>
+
+      </template>
+
+      <br>
+      <div class="slds-card outer-card">
+        <article class="slds-tile">
+          <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+            <a href="#">Salesforce UX</a>
+          </h3>
+          <div class="slds-tile__detail">
+            <dl class="slds-list_horizontal slds-wrap">
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <br>
+      <div class="slds-card outer-card">
+        <article class="slds-tile">
+          <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+            <a href="#">Salesforce UX</a>
+          </h3>
+          <div class="slds-tile__detail">
+            <dl class="slds-list_horizontal slds-wrap">
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <br>
+      <div class="slds-card outer-card">
+        <article class="slds-tile">
+          <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+            <a href="#">Salesforce UX</a>
+          </h3>
+          <div class="slds-tile__detail">
+            <dl class="slds-list_horizontal slds-wrap">
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <br>
+      <div class="slds-card outer-card">
+        <article class="slds-tile">
+          <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+            <a href="#">Salesforce UX</a>
+          </h3>
+          <div class="slds-tile__detail">
+            <dl class="slds-list_horizontal slds-wrap">
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <br>
+        </div>
+
+        <!-- end of column 1 -->
+
+
+
+        <!-- column 2 -->
+
+        <div class="slds-col slds-size_1-of-3 pageLayout">
+
+            <div class="demo-only" style="width:320px">
+                <nav class="slds-nav-vertical" aria-label="Sub page">
+                  <div class="slds-form-element slds-p-horizontal_large">
+                    <label class="slds-form-element__label slds-assistive-text" for="input-id-01">Filter navigation items</label>
+                    <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                      <span class="slds-icon_container slds-icon-utility-search">
+                        <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                          <use xlink:href="/SLDS/icons/utility-sprite/svg/symbols.svg#search"></use>
+                        </svg>
+                      </span>
+                      <input type="search" id="input-id-01" placeholder="Quick Search" class="slds-input" title="Quick Search"/>
+                    </div>
+                  </div>
+                  <div class="slds-nav-vertical__section">
+                    <h2 id="entity-header" class="slds-nav-vertical__title" title="Sub-Genres">Sub-Genres</h2>
+                    <ul aria-describedby="entity-header">
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayHardSFPage} title="Hard Science Fiction">Hard Science Fiction</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="Soft Science Fiction">Soft Science Fiction</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="Military Science Fiction">Military Science Fiction</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="Space Opera">Space Opera</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="SteamPunk">Steampunk</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="Apocalyptic Science Fiction">Apocalyptic Science Fiction</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="Dystopian Science Fiction">Dystopian Science Fiction</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="Cyberpunk">Cyberpunk</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action" title="Space Western">Space Western</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="slds-nav-vertical__section">
+                    <h2 id="folder-header" class="slds-nav-vertical__title">Folders</h2>
+                    <ul aria-describedby="folder-header">
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action">Created by Me</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action">Shared with Me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+
+            
+        </div>
+
+      <!-- end of column 2 -->
+
+      </div>
+
+        </div>
+
+        <div class="slds-col slds-size_1-of-4">
+            
+        </div>
+   
+
+     <!-- grid layout div -->
+     </div>
+
+     <!-- page layout div -->
+    </div> 
+
+    <!-- end of home page interface -->
+
+
+</template>

@@ -1,4 +1,4 @@
-.center {
+ .center {
     text-align: center;
 }
 .link {
@@ -37,11 +37,26 @@ img {
     height: 75px;
 }
 
-.span{
+.header{
     width:100%;
-}
+    z-index: 2;
+    margin-top: 0px;
+    top: 0;
+} 
 
 .pageLayout {
     padding:2em;
 }
+
+.outer-card {
+    padding:2em;
+}
+
+.inner-card{
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+
+
 
