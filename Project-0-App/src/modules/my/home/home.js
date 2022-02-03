@@ -1,8 +1,12 @@
 import { LightningElement, api } from 'lwc';
+import items from '../mockDB'
 
 export default class Home extends LightningElement {
 
     isHardSFGenreClicked = false;
+
+    
+
 
     displayHardSFPage() {
         // this.template.querySelector()
@@ -14,6 +18,14 @@ export default class Home extends LightningElement {
         else {
             console.log("You are on the home page.")
         }
+    }
+
+    connectedCallback() {
+        return items;
+    }
+
+    renderedCallback() {
+        items = items;
     }
     
 }

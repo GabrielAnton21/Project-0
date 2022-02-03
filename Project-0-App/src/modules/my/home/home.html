@@ -4,7 +4,7 @@
 
  <div class="pageLayout">
 
-    <div class="slds-text-heading_medium slds-align_absolute-center" title="Subheading">Select from hundreds of Sci-fi novels, short stories, and more!</div>
+    <div class="slds-text-heading_medium slds-align_absolute-center" title="Subheading">Select from hundreds of used novels, short stories, and more!</div>
     <br>
 
 
@@ -26,7 +26,7 @@
 
           <template if:true={isHardSFGenreClicked}>
   
-            <my-hardsfgenre></my-hardsfgenre>
+            <my-hardsfgenre> </my-hardsfgenre>
 
           </template>
 
@@ -128,45 +128,48 @@
                     </div>
                   </div>
                   <div class="slds-nav-vertical__section">
-                    <h2 id="entity-header" class="slds-nav-vertical__title" title="Sub-Genres">Sub-Genres</h2>
+                    <h2 id="entity-header" class="slds-nav-vertical__title" title="Sub-Genres">Genres</h2>
                     <ul aria-describedby="entity-header">
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" onclick={displayHardSFPage} title="Hard Science Fiction">Hard Science Fiction</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayHardSFPage} title="Science Fiction">Science Fiction</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Soft Science Fiction">Soft Science Fiction</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Fantasy">Fantasy</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Military Science Fiction">Military Science Fiction</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Romance">Romance</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Space Opera">Space Opera</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Crime">Crime</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="SteamPunk">Steampunk</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Horror">Horror</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Apocalyptic Science Fiction">Apocalyptic Science Fiction</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Action and Adventure">Action and Adventure</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Dystopian Science Fiction">Dystopian Science Fiction</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Historical Fiction">Historical Fiction</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Cyberpunk">Cyberpunk</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Comedy">Comedy</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Space Western">Space Western</a>
+                        <a href="#" class="slds-nav-vertical__action" title="Biography">Biography</a>
                       </li>
                     </ul>
                   </div>
                   <div class="slds-nav-vertical__section">
-                    <h2 id="folder-header" class="slds-nav-vertical__title">Folders</h2>
+                    <h2 id="folder-header" class="slds-nav-vertical__title">Self-Published Works</h2>
                     <ul aria-describedby="folder-header">
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action">Created by Me</a>
+                        <a href="#" class="slds-nav-vertical__action">New This Week</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action">Shared with Me</a>
+                        <a href="#" class="slds-nav-vertical__action">Short Stories</a>
+                      </li>
+                      <li class="slds-nav-vertical__item">
+                        <a href="#" class="slds-nav-vertical__action">Novels</a>
                       </li>
                     </ul>
                   </div>
@@ -194,6 +197,8 @@
     </div> 
 
     <!-- end of home page interface -->
+
+    
 
 
 </template>

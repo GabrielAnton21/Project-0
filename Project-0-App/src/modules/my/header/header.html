@@ -1,5 +1,5 @@
 <template>
-    <div class="slds-context-bar ">
+    <div class="slds-context-bar">
         <div class="slds-context-bar__primary">
           <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
             <div class="slds-context-bar__icon-action">
@@ -19,7 +19,7 @@
               </button>
             </div>
             <span class="slds-context-bar__label-action slds-context-bar__app-name">
-              <span  title="App Name">Sci-Fi Book Repository</span>
+              <span  title="App Name">Book Repository</span>
             </span>
           </div>
         </div>
@@ -31,49 +31,43 @@
                 <span class="slds-truncate" title="Home" onclick={displayHome}>Home</span>
               </a>
             </li>
-            <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click">
+
+            <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click my-menu">
               <a href="#" class="slds-context-bar__label-action" title="Menu Item">
-                <span class="slds-truncate" title="Menu Item">Menu Item</span>
+                <span class="slds-truncate" title="Self-Published Works">Self-Published Works</span>
               </a>
+
               <div class="slds-context-bar__icon-action slds-p-left_none">
-                <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
+
+                <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" onclick={handleClick} aria-haspopup="true" title="Open menu item submenu">
                   <svg class="slds-button__icon" aria-hidden="true">
                     <use xlink:href="/SLDS/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
                   </svg>
                   <span class="slds-assistive-text">Open menu item submenu</span>
                 </button>
+
               </div>
+
               <div class="slds-dropdown slds-dropdown_right">
                 <ul class="slds-dropdown__list" role="menu">
-                  <li class="slds-dropdown__item" role="presentation">
-                    <a href="#" role="menuitem" tabindex="-1">
-                      <span class="slds-truncate" title="Main action">
-                        <svg class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
-                          <use xlink:href="/SLDS/icons/utility-sprite/svg/symbols.svg#add"></use>
-                        </svg>Main action</span>
-                    </a>
-                  </li>
+
                   <li class="slds-dropdown__header slds-has-divider_top-space" role="separator">
-                    <span>Menu header</span>
+                    <span>Self-Publishing</span>
                   </li>
                   <li class="slds-dropdown__item" role="presentation">
                     <a href="#" role="menuitem" tabindex="-1">
-                      <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                      <span class="slds-truncate" title="Menu Item One">Sell Your Books</span>
                     </a>
                   </li>
                   <li class="slds-dropdown__item" role="presentation">
                     <a href="#" role="menuitem" tabindex="-1">
-                      <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
-                    </a>
-                  </li>
-                  <li class="slds-dropdown__item" role="presentation">
-                    <a href="#" role="menuitem" tabindex="-1">
-                      <span class="slds-truncate" title="Menu Item Three">Menu Item Three</span>
+                      <span class="slds-truncate" title="Menu Item Two">New This Week</span>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
+
             <li class="slds-context-bar__item">
               <a href="#" class="slds-context-bar__label-action" title="Menu Item">
                 <span class="slds-truncate" title="About Us" onclick={displayAboutUs}>About Us</span>
@@ -90,6 +84,14 @@
               </a>
             </li>
           </ul>
+
         </nav>
+
+        <div class="slds-float_right padding">
+          <p>0 Items | Total 0</p>
+          <a href="#" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate" title="View Cart" onclick={displayCart}>View Cart</span>
+          </a>
+        </div>
       </div>
 </template>

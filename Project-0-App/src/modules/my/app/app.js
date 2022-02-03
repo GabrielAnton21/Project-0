@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 import aboutus from '../aboutus/aboutus.html'
 import community from '../community/community.html'
+import { items } from '../mockDB'
 
 export default class App extends LightningElement {
 
@@ -63,10 +64,11 @@ export default class App extends LightningElement {
         this.communityPage = false;
 
         this.pageClicked = false;
-        console.log(e.detail);
-
+        console.log(this.homePage);
+        
     }
 
-
+    
+    
 
 }
