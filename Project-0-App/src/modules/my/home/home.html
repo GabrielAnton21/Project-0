@@ -9,28 +9,28 @@
 
 
 
-    <div class="slds-grid slds-gutters">
+    <!-- <div class="slds-grid slds-gutters"> -->
 
       <!-- left gap -->
-        <div class="slds-col slds-size_1-of-4">
-        </div>
+        <!-- <div class="slds-col slds-size_1-of-4">
+        </div> -->
        <!-- left gap -->
 
 
-      <div class="slds-col slds-size_2-of-4">
+      <!-- <div class="slds-col slds-size_2-of-4"> -->
         <div class="slds-grid slds-gutters">
         
         <!-- column 1 -->
 
         <div class="slds-col slds-size_2-of-3 pageLayout"> 
 
-          <template if:true={isHardSFGenreClicked}>
+          <template if:true={isScienceFictionClicked}>
   
-            <my-hardsfgenre> </my-hardsfgenre>
+            <my-sciencefiction onaddtocart={handleAddToCart}> </my-sciencefiction>
 
           </template>
 
-    <template if:false={isHardSFGenreClicked}>
+    <template if:false={isScienceFictionClicked}>
 
     <div class="slds-card outer-card">
 
@@ -131,31 +131,31 @@
                     <h2 id="entity-header" class="slds-nav-vertical__title" title="Sub-Genres">Genres</h2>
                     <ul aria-describedby="entity-header">
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" onclick={displayHardSFPage} title="Science Fiction">Science Fiction</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayScienceFictionPage} title="Science Fiction">Science Fiction</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Fantasy">Fantasy</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayFantasyPage} title="Fantasy">Fantasy</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Romance">Romance</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayRomancePage}  title="Romance">Romance</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Crime">Crime</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayCrimePage}  title="Crime">Crime</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Horror">Horror</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayHorrorPage}  title="Horror">Horror</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Action and Adventure">Action and Adventure</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayActionAdventurePage}  title="Action and Adventure">Action and Adventure</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Historical Fiction">Historical Fiction</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayHistoricalFictionPage}  title="Historical Fiction">Historical Fiction</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Comedy">Comedy</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayComedyPage}  title="Comedy">Comedy</a>
                       </li>
                       <li class="slds-nav-vertical__item">
-                        <a href="#" class="slds-nav-vertical__action" title="Biography">Biography</a>
+                        <a href="#" class="slds-nav-vertical__action" onclick={displayBiographyPage}  title="Biography">Biography</a>
                       </li>
                     </ul>
                   </div>
@@ -183,15 +183,15 @@
 
       </div>
 
-        </div>
+        <!-- </div> -->
 
-        <div class="slds-col slds-size_1-of-4">
+        <!-- <div class="slds-col slds-size_1-of-4">
             
-        </div>
+        </div> -->
    
 
      <!-- grid layout div -->
-     </div>
+     <!-- </div> -->
 
      <!-- page layout div -->
     </div> 

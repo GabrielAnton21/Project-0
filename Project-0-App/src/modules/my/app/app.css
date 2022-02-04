@@ -57,6 +57,10 @@ img {
     overflow: hidden;
 }
 
+.hidden{
+    display:none;
+}
+
 
 
 

@@ -13,13 +13,16 @@ export default class App extends LightningElement {
     communityPage = false;
     sellYourBooksPage = false;
     homePage = true;
+    cartPage = true;
 
+    
 
     handleAboutUs(e){
         this.aboutUsPage = true;
         this.sellYourBooksPage = false;
         this.homePage = false;
         this.communityPage = false;
+        this.template.querySelector("my-cart").style.display = "none";
         
         this.pageClicked = true;
         this.whatTemplate = "2";
@@ -34,6 +37,7 @@ export default class App extends LightningElement {
         this.sellYourBooksPage = false;
         this.homePage = false;
         this.communityPage = true;
+        this.template.querySelector("my-cart").style.display = "none";
 
         this.pageClicked = true;
         this.whatTemplate = "3";
@@ -49,6 +53,7 @@ export default class App extends LightningElement {
         this.sellYourBooksPage = true;
         this.homePage = false;
         this.communityPage = false;
+        this.template.querySelector("my-cart").style.display = "none";
         
         this.pageClicked = true;
         this.whatTemplate = "4";
@@ -62,13 +67,28 @@ export default class App extends LightningElement {
         this.sellYourBooksPage = false;
         this.homePage = true;
         this.communityPage = false;
+        this.template.querySelector("my-cart").style.display = "none";
 
         this.pageClicked = false;
         console.log(this.homePage);
         
     }
 
-    
-    
+    handleCart(e){
+        this.aboutUsPage = false;
+        this.sellYourBooksPage = false;
+        this.homePage = false;
+        this.communityPage = false;
+        this.template.querySelector("my-cart").style.display = "unset";
+
+        this.pageClicked = true;
+
+    }
+
+    handleAddToCart(e){
+        console.log("App caught the event.");
+        this.template.querySelector("my-cart").cartMethod(e.detail);
+    }
+
 
 }

@@ -1,31 +1,34 @@
 import { LightningElement, api } from 'lwc';
-import items from '../mockDB'
+import { items } from '../mockDB'
 
 export default class Home extends LightningElement {
 
-    isHardSFGenreClicked = false;
+    isScienceFictionClicked = false;
 
     
 
-
-    displayHardSFPage() {
+    displayScienceFictionPage() {
         // this.template.querySelector()
-
-        this.isHardSFGenreClicked = !this.isHardSFGenreClicked;
-        if(this.isHardSFGenreClicked) {
-            console.log("You're browsing Hard Sci Fi Books");
+    
+        this.isScienceFictionClicked = !this.isScienceFictionClicked;
+        if(this.isScienceFictionClicked) {
+            console.log("You are browsing Sci Fi Books");
         }
         else {
             console.log("You are on the home page.")
         }
     }
 
-    connectedCallback() {
-        return items;
-    }
+    // connectedCallback() {
+    //     return items;
+    // }
 
-    renderedCallback() {
-        items = items;
+    // renderedCallback() {
+    //     items = items;
+    // }
+
+    handleAddToCart(e){
+        console.log("Event caught");
     }
     
 }

@@ -23,6 +23,11 @@ export default class Header extends LightningElement {
         this.dispatchEvent(new CustomEvent("home", {detail: true}));
     }
 
+    @api displayCart(){
+        this.dispatchEvent(new CustomEvent("cart", {detail: true}));
+    }
+
+
     handleClick(){
         
         this.menuIsOpen = !this.menuIsOpen;
