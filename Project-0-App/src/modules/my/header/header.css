@@ -5,3 +5,17 @@
 .slds-context-bar{
     height: 4em;
 }
+
+li {
+    float: none;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+    span{
+        font-size: 10px;
+    }
+    li{
+        display:flex;
+    }
+}

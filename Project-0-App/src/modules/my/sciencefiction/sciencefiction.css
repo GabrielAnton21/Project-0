@@ -3,6 +3,21 @@
 }
 
 .inner-card{
-    border: solid 1px black;
+    border: solid 1px #3390FF;
     overflow: hidden;
+    align-items: center;
+    color: #3390FF;
+    padding: 1.5em;
+    background-color: white;
+    height: 30em;
+    width: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+    .inner-card{
+        width: 145px;
+    }
+    .outer-card{
+        width: 510px;
+    }
 }

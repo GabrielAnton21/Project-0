@@ -1,17 +1,19 @@
 <template>
 
-<div class="flex-container">
+<div class="pageLayout">
 
     <div class="slds-card inner-card">
         <div class="slds-p-around_medium name">Name: </div>
         <div class="slds-p-around_medium author">Author: </div>
-        <div class="slds-p-around_medium publisher">Publisher: </div>
         <div class="slds-p-around_medium rating">Rating: </div>
         <div class="slds-p-around_medium price">Price: </div>
       </div>
-      
-</div>
-    
+    <br>
 
-    <button onclick={clearCart}>Clear Cart</button>
+    <button class="slds-button slds-button_outline-brand" onclick={clearCart}>Clear Cart</button>
+    <br>
+    <br>
+    <button class="slds-button slds-button_outline-brand">Checkout</button>
+</div>
+
 </template>

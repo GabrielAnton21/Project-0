@@ -13,3 +13,12 @@
     border: solid 1px black;
     overflow: hidden;
 }
+
+@media screen and (max-width: 1000px) {
+    .inner-card{
+        width: 145px;
+    }
+    .outer-card{
+        width: 460px;
+    }
+}

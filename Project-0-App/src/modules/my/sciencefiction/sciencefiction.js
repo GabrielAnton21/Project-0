@@ -16,7 +16,6 @@ export default class ScienceFiction extends LightningElement {
             
             this.template.querySelectorAll('div.inner-card')[i].querySelector('.name').textContent += items[i].name;
             this.template.querySelectorAll('div.inner-card')[i].querySelector('.author').textContent += items[i].author;
-            this.template.querySelectorAll('div.inner-card')[i].querySelector('.publisher').textContent += items[i].description;
             this.template.querySelectorAll('div.inner-card')[i].querySelector('.rating').textContent += items[i].rating;
             this.template.querySelectorAll('div.inner-card')[i].querySelector('.price').textContent += items[i].price;
 
